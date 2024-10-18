@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./aboutUs.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">RestaurantName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="btn btn-custom" href="#reservation">Make a Reservation</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="about-us">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>
+                        Welcome to our restaurant, where passion meets flavor. Established in 2023, we have been serving a unique blend of culinary delights crafted with love and the finest ingredients. Our commitment is to provide a memorable dining experience for all our guests, whether you're here for a family gathering, a romantic dinner, or just a quick bite.
+                    </p>
+                    <h3>What We Provide</h3>
+                    <ul class="about-list">
+                        <li>🌟 Fresh and Locally Sourced Ingredients</li>
+                        <li>🍽️ A Diverse Menu with Seasonal Specials</li>
+                        <li>☕ Premium Coffee and Refreshing Beverages</li>
+                        <li>🎶 Live Music Evenings and Special Events</li>
+                        <li>🛋️ A Cozy and Welcoming Atmosphere</li>
+                    </ul>
+                    <h3>Our Values</h3>
+                    <p>
+                        At the heart of our restaurant is a commitment to sustainability and community. We take pride in using locally sourced produce, supporting local farmers, and reducing waste. We believe that great food should be shared, and we strive to create an environment where everyone feels at home.
+                    </p>
+                    <a href="#" class="btn-custom">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="./pexels-elevate-1267320.jpg" alt="Chef Preparing a Dish" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <header class="header">
+        <div class="container">
+            <div class="nav-section">
+                <div class="logo">
+                    <img src="./logo.jpg" alt="Restaurant Logo" class="logo-image">
+                    <span class="logo-text">Your Restaurant</span>
+                </div>
+                <table class="nav-table">
+                    <tbody>
+                        <tr>
+                            <td><a href="#home">Home</a></td>
+                            <td><a href="#menu">Menu</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#specials">Specials</a></td>
+                            <td><a href="#gallery">Gallery</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><a href="#contact" class="full-width">Contact</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="contact-section">
+                <h2>Have Questions? Contact Us!</h2>
+                <form class="contact-form">
+                    <input type="email" placeholder="Your Email" class="email-input" required>
+                    <textarea placeholder="Your Message" class="message-input" required></textarea>
+                    <button type="submit" class="btn-custom">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+  </body>
+</html>

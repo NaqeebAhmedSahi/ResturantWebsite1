@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">RestaurantName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="btn btn-custom" href="#reservation">Make a Reservation</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./pexels-vanmalidate-769289.jpg" class="d-block w-100" alt="Slider 1">
+                <div class="carousel-caption">
+                    <h2 class="slide-text">Welcome to Our Restaurant</h2>
+                    <p class="slide-subtext">Experience the best culinary delights</p>
+                    <form class="d-flex justify-content-center search-form">
+                        <input class="form-control search-input" type="search" placeholder="Search for dishes, locations..." aria-label="Search">
+                        <button class="btn btn-custom search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./pexels-valeriya-1860208.jpg" class="d-block w-100" alt="Slider 2">
+                <div class="carousel-caption">
+                    <h2 class="slide-text">Delicious Meals, Anytime</h2>
+                    <p class="slide-subtext">Crafted with love by top chefs</p>
+                    <form class="d-flex justify-content-center search-form">
+                        <input class="form-control search-input" type="search" placeholder="Search for dishes, locations..." aria-label="Search">
+                        <button class="btn btn-custom search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./pexels-valeriya-1639556.jpg" class="d-block w-100" alt="Slider 3">
+                <div class="carousel-caption">
+                    <h2 class="slide-text">A Feast for Every Occasion</h2>
+                    <p class="slide-subtext">Book a table or order online</p>
+                    <form class="d-flex justify-content-center search-form">
+                        <input class="form-control search-input" type="search" placeholder="Search for dishes, locations..." aria-label="Search">
+                        <button class="btn btn-custom search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls remain unchanged -->
+    </div>
+    
+    <div class="specials-section container py-5 my-5">
+        <h2 class="section-title text-center mb-5">Today's Specials</h2>
+        <div class="specials-carousel">
+            <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+      
+            <div class="specials-wrapper">
+                <div class="specials-items">
+                    <!-- Card 1 -->
+                    <div class="special-card">
+                        <img src="./pexels-sydney-troxell-223521-718742.jpg" alt="Special Dish 1" class="special-image">
+                        <div class="special-content">
+                            <h3 class="special-title">Truffle Pasta</h3>
+                            <p class="special-description">Creamy pasta with a hint of fresh truffles, topped with parmesan.</p>
+                            <p class="special-price">$18.99</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other items (Card 2 to Card 6) -->
+                    <div class="special-card">
+                        <img src="./pexels-lum3n-44775-1410235.jpg" alt="Special Dish 2" class="special-image">
+                        <div class="special-content">
+                            <h3 class="special-title">Grilled Salmon</h3>
+                            <p class="special-description">Perfectly grilled salmon with a lemon butter sauce.</p>
+                            <p class="special-price">$22.99</p>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <img src="./pexels-robinstickel-70497.jpg" alt="Special Dish 3" class="special-image">
+                        <div class="special-content">
+                            <h3 class="special-title">Gourmet Burger</h3>
+                            <p class="special-description">Juicy beef patty with fresh greens, cheese, and a secret sauce.</p>
+                            <p class="special-price">$14.99</p>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <img src="./pexels-janetrangdoan-1128678.jpg" alt="Special Dish 4" class="special-image">
+                        <div class="special-content">
+                            <h3 class="special-title">Vegan Delight</h3>
+                            <p class="special-description">Delicious blend of vegetables and grains, with a rich sauce.</p>
+                            <p class="special-price">$15.99</p>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <img src="./pexels-fotios-photos-918328.jpg" alt="Special Dish 5" class="special-image">
+                        <div class="special-content">
+                            <h3 class="special-title">Lobster Bisque</h3>
+                            <p class="special-description">Rich and creamy lobster bisque with fresh herbs.</p>
+                            <p class="special-price">$25.99</p>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <img src="./pexels-fotios-photos-1351238.jpg" alt="Special Dish 6" class="special-image">
+                        <div class="special-content">
+                            <h3 class="special-title">Chocolate Lava Cake</h3>
+                            <p class="special-description">Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                            <p class="special-price">$9.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Buttons outside the wrapper -->
+            <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+    
+    <section class="key-highlights">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="highlights-wrapper">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="highlight-title">Fresh Ingredients</h3>
+                    <p class="highlight-description">We use only the freshest ingredients to ensure quality in every dish.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="highlight-title">Quick Service</h3>
+                    <p class="highlight-description">Enjoy prompt service without compromising on quality.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="highlight-title">Quality Assurance</h3>
+                    <p class="highlight-description">Our dishes are crafted with care, ensuring every bite is perfect.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="highlight-title">Family-Friendly</h3>
+                    <p class="highlight-description">A welcoming atmosphere for families and friends alike.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="highlight-title">Best Coffee</h3>
+                    <p class="highlight-description">Try our signature coffee that leaves you wanting more.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3 class="highlight-title">Unique Cocktails</h3>
+                    <p class="highlight-description">Enjoy our handcrafted cocktails, perfect for any occasion.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="highlight-title">Vegetarian Options</h3>
+                    <p class="highlight-description">Delicious vegetarian dishes that satisfy everyone.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="highlight-title">Global Cuisine</h3>
+                    <p class="highlight-description">Taste dishes inspired by culinary traditions around the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-wrapper">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The food was absolutely amazing! I can't wait to come back again!"</p>
+                    </div>
+                    <div class="customer-info">
+                        <img src="./anonymous.jpg" alt="Customer 1" class="customer-image">
+                        <h3 class="customer-name">John Doe</h3>
+                        <span class="customer-role">Food Blogger</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"A wonderful dining experience with great ambiance and friendly staff."</p>
+                    </div>
+                    <div class="customer-info">
+                        <img src="./anonymous.jpg" alt="Customer 2" class="customer-image">
+                        <h3 class="customer-name">Jane Smith</h3>
+                        <span class="customer-role">Regular Customer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Best restaurant in town! Their desserts are to die for!"</p>
+                    </div>
+                    <div class="customer-info">
+                        <img src="./anonymous.jpg" alt="Customer 3" class="customer-image">
+                        <h3 class="customer-name">Emily Johnson</h3>
+                        <span class="customer-role">Food Enthusiast</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I love the atmosphere here, perfect for family dinners and special occasions."</p>
+                    </div>
+                    <div class="customer-info">
+                        <img src="./anonymous.jpg" alt="Customer 4" class="customer-image">
+                        <h3 class="customer-name">Michael Brown</h3>
+                        <span class="customer-role">Happy Patron</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Ambiance</h2>
+            
+            <div class="gallery-item">
+                <div class="gallery-text">
+                    <h3>Cozy Dining Area</h3>
+                    <div class="underline"></div>
+                    <p>Experience the warmth and comfort of our cozy dining area, perfect for intimate dinners and special occasions. Enjoy delightful dishes crafted from the freshest ingredients in an inviting atmosphere.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <img src="./Cozy Dining Area.jpg" alt="Ambiance 1" class="gallery-image">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="./Outdoor Seating.jpg" alt="Ambiance 2" class="gallery-image">
+                <div class="gallery-text">
+                    <h3>Outdoor Seating</h3>
+                    <div class="underline"></div>
+                    <p>Enjoy your meals under the stars in our beautifully designed outdoor seating area. Breathe in the fresh air as you indulge in our chef's special selections amidst nature.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+    
+            <div class="gallery-item">
+                <div class="gallery-text">
+                    <h3>Bar Area</h3>
+                    <div class="underline"></div>
+                    <p>Relax at our bar area, where you can enjoy a variety of drinks in a stylish setting. Sip on signature cocktails and discover our wide selection of local and international beverages.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <img src="./Bar Area.jpg" alt="Ambiance 3" class="gallery-image">
+            </div>
+    
+            <div class="gallery-item">
+                <img src="./Live Music Nights.jpg" alt="Ambiance 4" class="gallery-image">
+                <div class="gallery-text">
+                    <h3>Live Music Nights</h3>
+                    <div class="underline"></div>
+                    <p>Join us for live music nights, where great food meets amazing entertainment. Enjoy the vibrant atmosphere while listening to local talents perform your favorite tunes.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+    
+            <div class="gallery-item">
+                <div class="gallery-text">
+                    <h3>Elegant Table Settings</h3>
+                    <div class="underline"></div>
+                    <p>Experience elegance with our meticulously arranged table settings that enhance your dining experience. Every detail is thoughtfully designed to provide a perfect ambiance.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <img src="./Elegant Table Settings.jpg" alt="Ambiance 5" class="gallery-image">
+            </div>
+    
+            <div class="gallery-item">
+                <img src="./pexels-vince-28962709.jpg" alt="Ambiance 6" class="gallery-image">
+                <div class="gallery-text">
+                    <h3>Spacious Interior</h3>
+                    <div class="underline"></div>
+                    <p>Our spacious interior provides a relaxed atmosphere for dining with family and friends. Enjoy our diverse menu while seated in a beautifully designed environment.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <header class="header">
+        <div class="container">
+            <div class="nav-section">
+                <div class="logo">
+                    <img src="./logo.jpg" alt="Restaurant Logo" class="logo-image">
+                    <span class="logo-text">Your Restaurant</span>
+                </div>
+                <table class="nav-table">
+                    <tbody>
+                        <tr>
+                            <td><a href="#home">Home</a></td>
+                            <td><a href="#menu">Menu</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#specials">Specials</a></td>
+                            <td><a href="#gallery">Gallery</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><a href="#contact" class="full-width">Contact</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="contact-section">
+                <h2>Have Questions? Contact Us!</h2>
+                <form class="contact-form">
+                    <input type="email" placeholder="Your Email" class="email-input" required>
+                    <textarea placeholder="Your Message" class="message-input" required></textarea>
+                    <button type="submit" class="btn-custom">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

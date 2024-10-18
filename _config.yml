@@ -1,0 +1,39 @@
+# Site settings
+title: Your Site Title
+description: > # This is the description of your site.
+  A brief description of your website goes here.
+baseurl: "ResturantWebsite" # The subpath of your site, e.g., "/blog" if you're publishing to "https://example.github.io/blog"
+url: "https://NaqeebAhmedSahi.github.io" # The base URL of your site
+
+# Build settings
+markdown: kramdown
+theme: minima # You can specify a Jekyll theme here
+plugins:
+  - jekyll-feed # Include other Jekyll plugins here
+
+# Exclude specific files or directories from the build process
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Collections settings (if you're using Jekyll collections)
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+# GitHub Pages settings
+github:
+  is_project_page: true
+
+# Pagination settings (if using Jekyll-paginate)
+paginate: 5 # Number of posts per page
+
+# Additional settings
+permalink: /:categories/:title/ # Customize the structure of your URLs

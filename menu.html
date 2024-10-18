@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./menu.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">RestaurantName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="btn btn-custom" href="#reservation">Make a Reservation</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./pexels-vanmalidate-769289.jpg" class="d-block w-100" alt="Slider 1">
+                <div class="carousel-caption">
+                    <h2 class="slide-text">Welcome to Our Restaurant</h2>
+                    <p class="slide-subtext">Experience the best culinary delights</p>
+                    <form class="d-flex justify-content-center search-form">
+                        <input class="form-control search-input" type="search" placeholder="Search for dishes, locations..." aria-label="Search">
+                        <button class="btn btn-custom search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./pexels-valeriya-1860208.jpg" class="d-block w-100" alt="Slider 2">
+                <div class="carousel-caption">
+                    <h2 class="slide-text">Delicious Meals, Anytime</h2>
+                    <p class="slide-subtext">Crafted with love by top chefs</p>
+                    <form class="d-flex justify-content-center search-form">
+                        <input class="form-control search-input" type="search" placeholder="Search for dishes, locations..." aria-label="Search">
+                        <button class="btn btn-custom search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./pexels-valeriya-1639556.jpg" class="d-block w-100" alt="Slider 3">
+                <div class="carousel-caption">
+                    <h2 class="slide-text">A Feast for Every Occasion</h2>
+                    <p class="slide-subtext">Book a table or order online</p>
+                    <form class="d-flex justify-content-center search-form">
+                        <input class="form-control search-input" type="search" placeholder="Search for dishes, locations..." aria-label="Search">
+                        <button class="btn btn-custom search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls remain unchanged -->
+    </div>
+    
+    <section class="menu">
+      <div class="container">
+        <h2 class="section-title">Menu</h2>
+
+        <div class="menu-category hot-offers">
+          <h3 class="category-title">Hot Offers</h3>
+          <div class="menu-items">
+            <div class="menu-item">
+              <img
+                src="./pexels-abhinavcoca-291528.jpg"
+                alt="Hot Offer 1"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="menu-title">Delicious Pizza</h3>
+                <p class="menu-description">
+                  Enjoy our mouthwatering pizza, topped with fresh ingredients
+                  and baked to perfection.
+                </p>
+                <span class="menu-price">$12.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="./pexels-ash-craig-122861-376464.jpg"
+                alt="Hot Offer 2"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="menu-title">Fresh Coffee</h3>
+                <p class="menu-description">
+                  Start your day with our rich and aromatic coffee brewed from
+                  the finest beans.
+                </p>
+                <span class="menu-price">$3.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="./pexels-brigitte-tohm-36757-239581.jpg"
+                alt="Hot Offer 3"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="menu-title">Tasty Burgers</h3>
+                <p class="menu-description">
+                  Indulge in our juicy burgers made with premium beef and topped
+                  with your choice of fresh ingredients.
+                </p>
+                <span class="menu-price">$10.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category other-foods">
+          <h3 class="category-title">Other Foods</h3>
+          <div class="menu-items">
+            <div class="menu-item">
+              <img src="./pexels-catscoming-699544.jpg" alt="Pasta" class="menu-image" />
+              
+              <div class="menu-details">
+                <h3 class="menu-title">Creamy Pasta</h3>
+                <p class="menu-description">
+                  Savor our creamy pasta made with a delightful blend of cheeses
+                  and spices.
+                </p>
+                <span class="menu-price">$11.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="./pexels-chanwalrus-1059943.jpg" alt="Salad" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="menu-title">Fresh Salad</h3>
+                <p class="menu-description">
+                  Enjoy our fresh salad made with seasonal vegetables and a
+                  tangy dressing.
+                </p>
+                <span class="menu-price">$8.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="./pexels-chanwalrus-958545.jpg" alt="Dessert" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="menu-title">Decadent Dessert</h3>
+                <p class="menu-description">
+                  Treat yourself to our delicious dessert, crafted with love and
+                  the finest ingredients.
+                </p>
+                <span class="menu-price">$6.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="./pexels-chanwalrus-958546.jpg"
+                alt="Smoothie"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="menu-title">Refreshing Smoothie</h3>
+                <p class="menu-description">
+                  Cool down with our refreshing smoothie, made with fresh fruits
+                  and yogurt.
+                </p>
+                <span class="menu-price">$5.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Burgers Category -->
+        <div class="menu-category burgers">
+          <h3 class="category-title">Burgers</h3>
+          <div class="menu-items">
+            <div class="menu-item">
+              <img
+                src="./pexels-chevanon-323682.jpg"
+                alt="Classic Cheeseburger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="menu-title">Classic Cheeseburger</h3>
+                <p class="menu-description">
+                  Enjoy our Classic Cheeseburger made with a juicy beef patty,
+                  topped with melted cheddar cheese, fresh lettuce, ripe
+                  tomatoes, pickles, and our special sauce, all sandwiched in a
+                  toasted brioche bun.
+                </p>
+                <span class="menu-price">$10.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="./pexels-dapur-melodi-192125-1109197.jpg"
+                alt="Spicy BBQ Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="menu-title">Spicy BBQ Burger</h3>
+                <p class="menu-description">
+                  Indulge in our Spicy BBQ Burger, featuring a grilled beef
+                  patty smothered in tangy barbecue sauce, crispy onion rings,
+                  jalapeños, and pepper jack cheese, served on a soft sesame
+                  seed bun.
+                </p>
+                <span class="menu-price">$11.99</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="./pexels-ella-olsson-572949-1640770.jpg"
+                alt="Mushroom Swiss Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="menu-title">Mushroom Swiss Burger</h3>
+                <p class="menu-description">
+                  Savor the flavor of our Mushroom Swiss Burger, featuring a
+                  tender beef patty topped with sautéed mushrooms, melted Swiss
+                  cheese, and garlic aioli on a toasted whole wheat bun.
+                </p>
+                <span class="menu-price">$12.49</span>
+                <a href="#" class="btn-custom read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Pizzas Category -->
+          <div class="menu-category pizzas">
+            <h3 class="category-title">Pizzas</h3>
+            <div class="menu-items">
+
+                <div class="menu-item">
+                    <img src="./pexels-ella-olsson-572949-1640772.jpg" alt="Margherita Pizza" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Margherita Pizza</h3>
+                        <p class="menu-description">Classic Margherita with fresh tomatoes, mozzarella cheese, and basil leaves. A perfect choice for a delightful Italian experience.</p>
+                        <span class="menu-price">$11.99</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./pexels-ella-olsson-572949-1640772.jpg" alt="Pepperoni Pizza" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Pepperoni Pizza</h3>
+                        <p class="menu-description">Loaded with layers of pepperoni, gooey mozzarella, and our signature tomato sauce, baked to perfection.</p>
+                        <span class="menu-price">$13.99</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./pexels-ella-olsson-572949-1640774.jpg" alt="Veggie Delight Pizza" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Veggie Delight Pizza</h3>
+                        <p class="menu-description">A fresh and colorful mix of bell peppers, onions, olives, mushrooms, and tomatoes on a cheesy base.</p>
+                        <span class="menu-price">$12.49</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+         <!-- Coffee Category -->
+         <div class="menu-category coffee">
+            <h3 class="category-title">Coffee</h3>
+            <div class="menu-items">
+
+                <div class="menu-item">
+                    <img src="./pexels-ella-olsson-572949-1640777.jpg" alt="Espresso" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Espresso</h3>
+                        <p class="menu-description">Rich and bold espresso with a perfect crema. The ideal choice for coffee purists who enjoy a strong, aromatic brew.</p>
+                        <span class="menu-price">$3.49</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./pexels-enginakyurt-1438672.jpg" alt="Latte" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Latte</h3>
+                        <p class="menu-description">Smooth and creamy, our classic latte is made with rich espresso and steamed milk, topped with a delicate layer of foam.</p>
+                        <span class="menu-price">$4.99</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./pexels-fariphotography-803963.jpg" alt="Cappuccino" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Cappuccino</h3>
+                        <p class="menu-description">A delightful balance of rich espresso, steamed milk, and a generous layer of frothy foam, perfect for any time of the day.</p>
+                        <span class="menu-price">$4.49</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+           <!-- Pasta Category -->
+           <div class="menu-category pasta">
+            <h3 class="category-title">Pasta</h3>
+            <div class="menu-items">
+
+                <div class="menu-item">
+                    <img src="./pexels-foodie-factor-162291-566566.jpg" alt="Spaghetti Carbonara" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Spaghetti Carbonara</h3>
+                        <p class="menu-description">Creamy spaghetti with crispy pancetta, parmesan, and freshly ground black pepper. A rich, authentic Italian classic.</p>
+                        <span class="menu-price">$11.99</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./pexels-fotios-photos-1279330.jpg" alt="Fettuccine Alfredo" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Fettuccine Alfredo</h3>
+                        <p class="menu-description">Fettuccine pasta tossed in a creamy, garlic-infused Alfredo sauce, topped with freshly grated parmesan cheese.</p>
+                        <span class="menu-price">$12.49</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./pexels-fotios-photos-918328.jpg" alt="Penne Arrabbiata" class="menu-image">
+                    <div class="menu-details">
+                        <h3 class="menu-title">Penne Arrabbiata</h3>
+                        <p class="menu-description">Penne pasta cooked in a spicy tomato sauce, garnished with fresh basil and a touch of chili flakes for an extra kick.</p>
+                        <span class="menu-price">$10.99</span>
+                        <a href="#" class="btn-custom read-more">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+      </div>
+    </section>
+    <header class="header">
+        <div class="container">
+            <div class="nav-section">
+                <div class="logo">
+                    <img src="./logo.jpg" alt="Restaurant Logo" class="logo-image">
+                    <span class="logo-text">Your Restaurant</span>
+                </div>
+                <table class="nav-table">
+                    <tbody>
+                        <tr>
+                            <td><a href="#home">Home</a></td>
+                            <td><a href="#menu">Menu</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#specials">Specials</a></td>
+                            <td><a href="#gallery">Gallery</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><a href="#contact" class="full-width">Contact</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="contact-section">
+                <h2>Have Questions? Contact Us!</h2>
+                <form class="contact-form">
+                    <input type="email" placeholder="Your Email" class="email-input" required>
+                    <textarea placeholder="Your Message" class="message-input" required></textarea>
+                    <button type="submit" class="btn-custom">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+  </body>
+</html>
